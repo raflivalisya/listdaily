@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListDaily | Affordable Elegance Hijabs</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and a custom, elegant color palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // ELEGANT COLORS
+                        'famz-primary': '#B8A37E', // Soft Gold/Taupe for elegance and borders
+                        'famz-dark': '#333333',   // Dark Coffee/Soft Black for text and footer
+                        'famz-light': '#FAF9F6',  // Creamy White background
+                        'famz-accent': '#A6445D', // Sophisticated Berry/Blush for CTAs
+                        'famz-tng': '#1036A4', // Touch 'n Go Blue (NEW)
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter and Playfair Display Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+<body class="bg-famz-light font-sans text-famz-dark">
+
+
+
+    <!-- Navigation (Simple & Elegant) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-serif font-extrabold text-famz-dark tracking-wider">
+                ListDaily <span class="text-famz-accent"></span>
+            </a>
+            
+   
+
+                <!-- Desktop Navigation (Hidden for simplicity, but links still exist) -->
+                <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                    <a href="#materials" class="text-famz-dark hover:text-famz-accent transition duration-300">Materials</a>   
+                    <a href="#about" class="text-famz-dark hover:text-famz-accent transition duration-300">About Us</a>
+                    <a href="#contact" class="text-famz-dark hover:text-famz-accent transition duration-300">Contact</a>
+                </nav>
+
+                
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-150">
+                    <svg class="w-6 h-6 text-famz-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#materials" class="block px-3 py-2 rounded-md text-base font-medium text-famz-dark hover:bg-gray-50">Materials</a>
+                <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium text-famz-dark hover:bg-gray-50">Reviews</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-famz-dark hover:bg-gray-50">About Us</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-famz-dark hover:bg-gray-50">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="relative h-[70vh] md:h-[90vh] flex items-center justify-center text-center overflow-hidden bg-famz-dark/80">
+            <!-- Focused Image Placeholder of a Hijab Model -->
+            <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/backgroundhijab.jpg'); background-position: center 20%;"></div>
+            <div class="absolute inset-0 z-0 bg-famz-dark/20 backdrop-brightness-50"></div> <!-- Dark Overlay for contrast -->
+
+            <div class="relative z-10 p-8 max-w-4xl mx-auto bg-white/50 backdrop-blur-sm rounded-xl shadow-1xl border-2 border-famz-primary">
+             <img class="w-full h-80 object-contain p-4 mb-4" 
+                  src="images/logo.png" 
+                  alt="Logo ListDaily">
+              
+                <p class="text-xl md:text-3xl text-gray-700 font-light mb-8 italic">
+                    Timeless.Soft.Simply You
+                </p>
+                <a href="#materials" class="inline-block px-10 py-4 bg-famz-accent text-white text-lg font-semibold rounded-full shadow-lg hover:bg-famz-accent/90 transition duration-300 transform hover:scale-105">
+                    Shop Now & Experience the Drape
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Materials & Collection Highlight Section -->
+        <section id="materials" class="py-16 md:py-24 bg-famz-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif font-bold text-center text-famz-dark mb-4">Our Core Materials</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    We've curated the perfect fabrics to ensure maximum comfort, coverage, and style for any occasion, all at accessible prices.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+                    <!-- Material Card 1: Cotton -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-famz-primary">
+                        <!-- Updated Placeholder for Cotton -->
+                        <img class="w-full h-60 object-cover rounded-lg mb-4" 
+                             src="images/alea shawl variant nude.png" 
+                             alt="Soft Cotton Hijab Drape">
+                        <h3 class="text-2xl font-serif font-semibold text-famz-dark mb-2">Alea Shawl Variant Nude</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Affordable Comfort. Soft, breathable, and perfectly matte. Our cotton collection is your go-to for daily wear, offering an effortless drape and minimal fuss. The perfect blend of quality and value.
+                        </p>
+                        <!-- Price and Add to Cart (Trigger Modal) -->
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-xl font-bold text-famz-primary" id="price-cotton">Rp 37.000</span>
+                            <button onclick="showSelectionModal('Alea Shawl Variant Nude', 'Rp 37.000', 'cotton')" class="flex items-center space-x-2 px-4 py-2 bg-famz-accent text-white text-sm font-semibold rounded-lg shadow-md hover:bg-famz-accent/90 transition duration-300 transform hover:scale-[1.02]">
+                                <!-- Shopping cart icon (inline SVG) -->
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                <span>Variant</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Material Card 2: Chiffon -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-famz-primary">
+                        <!-- Updated Placeholder for Chiffon -->
+                        <img class="w-full h-60 object-cover rounded-lg mb-4" 
+                             src="images/Alea Shawl .png" 
+                             alt="Flowy Chiffon Hijab Style">
+                        <h3 class="text-2xl font-serif font-semibold text-famz-dark mb-2">Alea Shawl</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Elegant Sheen. Lightweight, sheer, and beautifully fluid. Chiffon adds an element of refined elegance to your look, ideal for formal occasions and creating voluminous styles. It’s accessible luxury at its best.
+                        </p>
+                        <!-- Price and Add to Cart (Trigger Modal) -->
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-xl font-bold text-famz-primary" id="price-chiffon">Rp 37.000</span>
+                            <button onclick="showSelectionModal('Alea Shawl', 'Rp 37.000', 'chiffon')" class="flex items-center space-x-2 px-4 py-2 bg-famz-accent text-white text-sm font-semibold rounded-lg shadow-md hover:bg-famz-accent/90 transition duration-300 transform hover:scale-[1.02]">
+                                <!-- Shopping cart icon (inline SVG) -->
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                <span>Variant</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Material Card 3: Pashmina -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-famz-primary">
+                        <!-- Updated Placeholder for Pashmina -->
+                        <img class="w-full h-60 object-cover rounded-lg mb-4" 
+                             src="images/Alea Shawl Variant Pulm.png" 
+                             alt="Textured Pashmina Hijab Look">
+                        <h3 class="text-2xl font-serif font-semibold text-famz-dark mb-2">Alea Shawl Variant Pulm</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Aesthetic Drape. Known for its rich texture and substantial feel, Pashmina provides cozy warmth and an unmatched, luxurious drape. A perfect blend of aesthetic appeal and everyday functionality.
+                        </p>
+                        <!-- Price and Add to Cart (Trigger Modal) -->
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-xl font-bold text-famz-primary" id="price-pashmina">Rp 37.000</span>
+                            <button onclick="showSelectionModal('Alea Shawl Variant Pulm', 'Rp 37.000', 'pashmina')" class="flex items-center space-x-2 px-4 py-2 bg-famz-accent text-white text-sm font-semibold rounded-lg shadow-md hover:bg-famz-accent/90 transition duration-300 transform hover:scale-[1.02]">
+                                <!-- Shopping cart icon (inline SVG) -->
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                <span>Variant</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Material Card 4: Dusty -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-famz-primary">
+                        <!-- Updated Placeholder for Dusty -->
+                        <img class="w-full h-60 object-cover rounded-lg mb-4" 
+                             src="images/Alea Shawl dusty pink .png" 
+                             alt="Flowy Chiffon Hijab Style">
+                        <h3 class="text-2xl font-serif font-semibold text-famz-dark mb-2">Alea Shawl Dusty pink</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Elegant Sheen. Lightweight, sheer, and beautifully fluid. Chiffon adds an element of refined elegance to your look, ideal for formal occasions and creating voluminous styles. It’s accessible luxury at its best.
+                        </p>
+                        <!-- Price and Add to Cart (Trigger Modal) -->
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-xl font-bold text-famz-primary" id="price-chiffon">Rp 37.000</span>
+                            <button onclick="showSelectionModal('Alea Shawl', 'Rp 37.000', 'Dusty')" class="flex items-center space-x-2 px-4 py-2 bg-famz-accent text-white text-sm font-semibold rounded-lg shadow-md hover:bg-famz-accent/90 transition duration-300 transform hover:scale-[1.02]">
+                                <!-- Shopping cart icon (inline SVG) -->
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                <span>Variant</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- 4. Why Choose FAMZ? CTA -->
+        <section id="about" class="py-16 bg-famz-primary/5">
+            <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif font-bold text-famz-dark mb-4">Our Promise: Affordable Elegance</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    At ListDaily, we believe style shouldn't break the bank. We combine high-quality fabrics with timeless design, ensuring you look and feel elegant without the high price tag.
+                </p>
+                <a href="#" class="inline-block px-8 py-3 bg-famz-accent text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-famz-accent/90 transition duration-300">
+                    Shop All Colors Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 3. COLOR SELECTION MODAL -->
+    <div id="color-selection-modal" class="hidden fixed inset-0 z-[200] bg-black bg-opacity-60 flex items-center justify-center p-4" onclick="closeSelectionModal(event)">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto transform transition-all duration-300" onclick="event.stopPropagation()">
+            <div class="md:grid md:grid-cols-2">
+                
+                <!-- Left Column: Image Preview -->
+                <div class="p-4 md:p-8 bg-famz-light rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+                    <img id="modal-product-image" src="" alt="Hijab Color Preview" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                    <p class="text-xs text-center text-gray-500 italic">Image is a conceptual representation of the color on the selected material.</p>
+                </div>
+
+                <!-- Right Column: Details and Selection -->
+                <div class="p-6 md:p-8 relative">
+                    <!-- Close Button -->
+                    <button onclick="closeSelectionModal()" class="absolute top-4 right-4 text-gray-500 hover:text-famz-dark transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+
+                    <h3 id="modal-product-name" class="text-3xl font-serif font-bold text-famz-dark mb-2 mt-4 md:mt-0"></h3>
+                    <p id="modal-product-price" class="text-2xl font-bold text-famz-accent mb-6"></p>
+
+                    <!-- Color Selection -->
+                    <div class="mb-8">
+                        <label class="block text-lg font-semibold text-famz-dark mb-3">Choose Your Color: <span id="selected-color-name" class="font-normal italic text-famz-primary text-base ml-2"></span></label>
+                        <div id="color-swatches" class="flex flex-wrap gap-4">
+                            <!-- Swatches will be injected here -->
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <button id="modal-add-to-cart" class="w-full flex items-center justify-center space-x-2 px-6 py-3 bg-famz-accent text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-famz-accent/90 transition duration-300 transform hover:scale-[1.01]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        <span>Confirm & Add to Cart</span>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- 5. CHECKOUT MODAL (Collects Name/Phone -> Initiates Payment) -->
+    <div id="checkout-modal" class="hidden fixed inset-0 z-[220] bg-black bg-opacity-70 flex items-center justify-center p-4" onclick="closeModal(event, 'checkout-modal')">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-lg transform transition-all duration-300 scale-95 md:scale-100" onclick="event.stopPropagation()">
+            <div class="p-6 md:p-8">
+                <h3 class="text-3xl font-serif font-bold text-famz-dark mb-4 border-b pb-2">Order Confirmation</h3>
+                
+                <!-- Order Summary -->
+                <div class="space-y-4 mb-6">
+                    <p class="text-lg font-semibold">Order Summary:</p>
+                    <div id="checkout-order-summary" class="bg-famz-light p-3 rounded-lg text-sm max-h-32 overflow-y-auto border">
+                        <!-- Summary injected here -->
+                    </div>
+                    <div class="flex justify-between items-center text-xl font-bold pt-2">
+                        <span>Total Payable:</span>
+                        <span id="checkout-final-subtotal" class="text-famz-accent">RM 0.00</span>
+                    </div>
+                </div>
+
+                <!-- Customer Details Form (Minimum for contact) -->
+                <form id="checkout-form" class="space-y-4 mb-8">
+                    <h4 class="text-xl font-serif font-bold text-famz-dark mt-6 mb-2">Your Contact Info</h4>
+                    <div>
+                        <label for="customer-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="customer-name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border">
+                    </div>
+                    <div>
+                        <label for="customer-phone" class="block text-sm font-medium text-gray-700">Phone Number (e.g., 0123456789)</label>
+                        <input type="tel" id="customer-phone" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border" placeholder="Enter number without spaces or dashes">
+                    </div>
+                </form>
+
+                <!-- Payment Method Button (W-FULL for responsiveness) -->
+                <button onclick="initiateTNGPayment()" class="w-full flex items-center justify-center space-x-2 px-6 py-3 bg-famz-tng text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-famz-tng/90 transition duration-300">
+                     <!-- TNG Icon (Wallet) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10zm-7-9h-2v2H9v2h2v2h2v-2h2v-2h-2V9z"/></svg>
+                    <span>Pay with Touch 'n Go eWallet</span>
+                </button>
+                
+                <p class="text-xs text-center text-gray-500 mt-3">You will be redirected to the QR code for instant payment.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. TNG QR CODE MODAL (NEW - PAYMENT STEP) -->
+    <div id="tng-qr-modal" class="hidden fixed inset-0 z-[230] bg-black bg-opacity-70 flex items-center justify-center p-4" onclick="closeModal(event, 'tng-qr-modal');">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-sm transform transition-all duration-300 scale-95 md:scale-100" onclick="event.stopPropagation()">
+            <div class="p-6 md:p-8 text-center">
+                
+                <h3 class="text-2xl font-serif font-bold text-famz-dark mb-4 border-b pb-2">Complete Payment (TNG eWallet)</h3>
+                
+                <!-- QR Code Image -->
+                <img id="tng-qr-image" 
+                     src="images/tng3.jpg" 
+                     alt="Touch N Go QR Code" 
+                     class="w-full h-auto rounded-lg shadow-lg mx-auto mb-6 border-4 border-famz-tng p-1">
+                
+                <p class="text-lg font-bold text-gray-700 mb-2">Total Amount to Pay:</p>
+                <span id="tng-amount-display" class="text-4xl font-extrabold text-famz-accent mb-6 block">RM 0.00</span>
+                
+                <p class="text-xs text-red-500 mb-6">Scan the QR code above using your TNG eWallet app to complete the transfer.</p>
+
+                <!-- Button to move to next step -->
+                <button onclick="openShippingModal()" class="w-full px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-green-700 transition duration-300">
+                    I Have Paid / Continue to Shipping
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. SHIPPING INFO MODAL (NEW - AFTER PAYMENT) -->
+    <div id="shipping-info-modal" class="hidden fixed inset-0 z-[240] bg-black bg-opacity-70 flex items-center justify-center p-4" onclick="closeModal(event, 'shipping-info-modal')">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-lg transform transition-all duration-300 scale-95 md:scale-100" onclick="event.stopPropagation()">
+            <div class="p-6 md:p-8">
+                
+                <h3 class="text-3xl font-serif font-bold text-famz-dark mb-4 border-b pb-2">Shipping Information</h3>
+                <p class="text-gray-600 mb-6">Please provide your complete address to receive your order.</p>
+
+                <!-- Shipping Details Form -->
+                <form id="shipping-form" class="space-y-4 mb-8">
+                    <div>
+                        <label for="address-line1" class="block text-sm font-medium text-gray-700">Address Line 1</label>
+                        <input type="text" id="address-line1" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border" placeholder="House/Apartment number, Street name">
+                    </div>
+                    <div>
+                        <label for="address-line2" class="block text-sm font-medium text-gray-700">Address Line 2 (Optional)</label>
+                        <input type="text" id="address-line2" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border" placeholder="Building, Unit, or Landmark">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                         <div>
+                            <label for="postcode" class="block text-sm font-medium text-gray-700">Postcode</label>
+                            <input type="text" id="postcode" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border">
+                        </div>
+                        <div>
+                            <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                            <input type="text" id="city" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+                        <input type="text" id="state" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-famz-primary focus:ring-famz-primary p-2 border">
+                    </div>
+                </form>
+
+                <!-- Finalize Button (W-FULL for responsiveness) -->
+                <button onclick="finalizeOrder()" class="w-full px-6 py-3 bg-famz-accent text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-famz-accent/90 transition duration-300">
+                    Confirm & Place Order
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer (Rest of the HTML content remains the same) -->
+    <footer id="contact" class="bg-famz-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-2xl font-serif font-extrabold mb-4">ListDaily</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 mb-4">
+                <a href="https://www.tiktok.com/@listdaily.id" target="_blank" class="hover:text-famz-accent transition duration-300 flex items-center justify-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.444 1.705C10.74 1.258 8.01 1 5.992 1c-1.636 0-3.238.275-4.707.828.175.05.342.103.504.161.944.33 1.84.773 2.68 1.32.744.477 1.442.99 2.083 1.554.767.67 1.488 1.407 2.146 2.227.697.854 1.344 1.764 1.946 2.72.636 1.026 1.22 2.102 1.748 3.235.54 1.17.98 2.39 1.32 3.655.332 1.21.57 2.44.698 3.682.13.98.158 1.968.082 2.94-.083 1.055-.31 2.08-.68 3.07-.358.973-.836 1.88-1.428 2.72-.593.832-1.29 1.595-2.07 2.26-.78.65-1.64 1.18-2.58 1.573-1.02.42-2.1.66-3.21.72-.573.033-1.144-.002-1.71-.1-.568-.105-1.12-.27-1.65-.49C4.855 24.96 4 24.16 4 23.36V13.84c0-1.61.97-2.92 2.35-3.58.59-.28 1.2-.42 1.82-.42 1.7 0 3.32.78 4.4 2.15 1.08 1.37 1.44 3.02 1.08 4.7-.35 1.6-1.5 2.9-3.04 3.48-1.54.58-3.3.4-4.75-.48-1.44-.88-2.2-2.5-2.2-4.14v-4.12h-2v4.12c0 2.25 1.02 4.3 2.82 5.5 1.8 1.2 4.14 1.58 6.3 1.14 2.16-.44 3.97-2.0 4.8-4.13.84-2.12.56-4.54-.7-6.57-1.25-2.03-3.46-3.3-5.78-3.48-2.32-.18-4.6.46-6.4 1.76-1.8 1.3-2.7 3.3-2.7 5.3v.06h-2v-.06c0-2.3 1.1-4.4 3.03-5.8 1.94-1.4 4.32-1.9 6.64-1.37 2.3.52 4.18 2.3 5.06 4.54.88 2.24.58 4.77-.9 6.84-1.48 2.07-3.9 3.3-6.4 3.3-1.3 0-2.5-.2-3.6-.65C4.24 23.97 3 22.82 3 21.36V11.84h2v10.52c0 .2.08.4.24.52.16.12.38.18.62.18 1.08 0 2.14-.38 3.06-1.1.92-.72 1.5-1.67 1.7-2.77.2-.9.18-1.8.04-2.7-.16-.9-.4-1.78-.72-2.6-1.24-3.1-3.65-5.7-6.5-7.3-2.9-1.6-6.1-2.1-9.3-1.5z"></path>
+                    </svg>
+                    <span>Discover us on TikTok</span>
+                </a>
+                
+                <a href="https://wa.me/085769792560" target="_blank" class="hover:text-green-500 transition duration-300 flex items-center justify-center space-x-2 text-green-500">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.031 2.308c-5.32 0-9.645 4.326-9.645 9.645 0 1.71.445 3.322 1.258 4.73l-.865 3.167 3.237-.847c1.378.75 2.94 1.15 4.965 1.15l.05.003c5.319 0 9.644-4.326 9.644-9.645 0-5.319-4.325-9.645-9.644-9.645zm4.07 13.918c-.23.606-.948.976-1.574 1.05-.626.075-1.554.11-2.274.075-.72-.035-1.897-.245-2.733-1.045-.836-.8-1.748-2.38-1.748-3.79s.707-2.12 1.414-2.827c.707-.707 1.575-1.045 2.274-1.045.699 0 1.488.075 2.064.075.576 0 .944-.075 1.205.525.26.6.14 1.414-.075 1.574-.21.16-.47.28-.707.45-.237.16-.497.35-.607.45-.11.075-.245.28-.42.45-.175.16-.385.35-.52.45-.14.075-.26.16-.5.075-.245-.075-.576-.245-1.045-.675-.47-.42-1.045-1.075-1.488-1.77-1.373-2.31-2.585-3.48-2.65-3.655-.065-.175-.075-.385-.075-.63 0-.245.035-.45.075-.607.035-.16.14-.35.245-.52.11-.175.245-.31.35-.42.11-.11.245-.21.35-.31.075-.11.21-.245.31-.42.11-.175.175-.385.245-.607.075-.22.075-.49.035-.675-.035-.185-.21.49-.49.8-.28.31-.576.606-.865.895-.29.28-.6.54-.865.75-.26.21-.52.35-.75.49-.23.14-.385.245-.52.35-.14.11-.26.175-.42.21-.16.035-.35 0-.52-.075z"/>
+                    </svg>
+                    <span>WhatsApp us Now!</span>
+                </a>
+            </div>
+            <div class="space-x-4 text-sm mt-4">
+                <a href="#" class="hover:text-famz-accent transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-famz-accent transition duration-300">Shipping Info</a>
+                <a href="mailto:info@famzcollection.com" class="hover:text-famz-accent transition duration-300">Contact Us</a>
+            </div>
+            <p class="text-sm mt-4 mb-2">&copy; 2024 FAMZ Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle and Selection Modal Logic -->
+    <script>
+        // --- Product Data Mockup ---
+        const productColors = {
+            'cotton': [
+                // Replace the placeholder URLs with the actual image URL for each color
+                { 
+                    name: 'Variant Nude', 
+                    hex: '#BA7A8C', 
+                    // PASTE YOUR SAGE COTTON HIJAB IMAGE URL HERE
+                    img: "images/alea shawl variant nude.png"
+                },
+
+            ],
+            'chiffon': [
+                { 
+                    name: 'Alea Shawl', 
+                    hex: '#EDDAED', 
+                    // PASTE YOUR PEARL MIST CHIFFON HIJAB IMAGE URL HERE
+                    img: "images/alea shawl 2.png"
+                },
+                   { 
+                    name: 'Alea Shawl', 
+                    hex: '#EDDAED', 
+                    // PASTE YOUR PEARL MIST CHIFFON HIJAB IMAGE URL HERE
+                    img: "images/alea shawl 3.png"
+                },
+              
+            ],
+            'pashmina': [
+
+              { 
+                    name: 'Alea Shawl Variant Pulm', 
+                    hex: '#EDDAED', 
+                    // PASTE YOUR PEARL MIST CHIFFON HIJAB IMAGE URL HERE
+                    img: "images/Alea Shawl Variant Pulm2.png"
+                },
+               
+            ],
+
+             'Dusty': [
+
+              { 
+                    name: 'Alea Shawl Dusty Pink', 
+                    hex: '#EDDAED', 
+                    // PASTE YOUR PEARL MIST CHIFFON HIJAB IMAGE URL HERE
+                    img: "images/Alea Shawl dusty pink2 .png"
+                },
+            ]
+        };
+
+    
+
+
+        // Global State
+        let selectedProduct = {}; // State for the currently selecting item
+        let cartItems = []; // Array to store all added items
+        let currentOrder = { // Temporary state for order details during checkout
+            name: '',
+            phone: '',
+            total: 0,
+            items: [],
+            address: {}
+        };
+
+        // --- Utility Functions ---
+
+        function parsePrice(priceString) {
+            return parseFloat(priceString.replace('RM', '').trim());
+        }
+        
+        function formatPrice(amount) {
+            return `RM ${amount.toFixed(2)}`;
+        }
+
+        function closeModal(event, id) {
+             // Only close if clicking on the backdrop
+            const modalElement = document.getElementById(id);
+            if (event && event.target !== modalElement) return;
+
+            modalElement.classList.add('hidden');
+            
+            // NOTE: Removed the special recursive block for 'tng-qr-modal' here.
+            
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // --- Cart Counter Logic (Same as before) ---
+        function updateCartCounter() {
+            const counterElement = document.getElementById('cart-counter');
+            const cartCount = cartItems.length;
+
+            counterElement.textContent = cartCount;
+
+            if (cartCount > 0) {
+                counterElement.classList.remove('opacity-0');
+                counterElement.classList.add('opacity-100');
+            } else {
+                counterElement.classList.remove('opacity-100');
+                counterElement.classList.add('opacity-0');
+            }
+        }
+        
+        function showConfirmationMessage(message) {
+            const messageBox = document.getElementById('confirmation-message');
+            messageBox.textContent = message;
+            
+            messageBox.classList.remove('hidden');
+            messageBox.style.opacity = '1';
+
+            setTimeout(() => {
+                messageBox.style.opacity = '0';
+                setTimeout(() => {
+                    messageBox.classList.add('hidden');
+                }, 300);
+            }, 3000);
+        }
+        
+        // --- Selection Modal Logic (Same as before) ---
+        function showSelectionModal(materialName, price, materialKey) {
+            const modal = document.getElementById('color-selection-modal');
+            const swatchesContainer = document.getElementById('color-swatches');
+            
+            const colors = productColors[materialKey];
+            if (!colors || colors.length === 0) {
+                console.error('No color data found for material:', materialKey);
+                return;
+            }
+
+            selectedProduct = {
+                name: materialName,
+                price: price,
+                materialKey: materialKey,
+                color: colors[0].name, 
+                colorHex: colors[0].hex,
+                colorImg: colors[0].img
+            };
+
+            document.getElementById('modal-product-name').textContent = materialName;
+            document.getElementById('modal-product-price').textContent = price;
+            document.getElementById('modal-product-image').src = selectedProduct.colorImg;
+            document.getElementById('selected-color-name').textContent = selectedProduct.color;
+
+            swatchesContainer.innerHTML = '';
+            colors.forEach((color, index) => {
+                const swatch = document.createElement('div');
+                swatch.className = 'w-10 h-10 rounded-full cursor-pointer shadow-md transition duration-200 border-2 hover:border-famz-accent';
+                swatch.style.backgroundColor = color.hex;
+                swatch.title = color.name;
+                
+                if (index === 0) {
+                    swatch.classList.add('border-famz-accent', 'ring-2', 'ring-famz-accent/50');
+                } else {
+                    swatch.classList.add('border-white');
+                }
+
+                swatch.setAttribute('data-color-name', color.name);
+                swatch.setAttribute('data-color-img', color.img);
+                swatch.setAttribute('data-color-hex', color.hex);
+                
+                swatch.onclick = updateColorSelection;
+                swatchesContainer.appendChild(swatch);
+            });
+
+            document.getElementById('modal-add-to-cart').onclick = finalAddToCart;
+
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function updateColorSelection(event) {
+            const swatchesContainer = document.getElementById('color-swatches');
+            const target = event.target;
+            
+            swatchesContainer.querySelectorAll('.w-10').forEach(swatch => {
+                swatch.classList.remove('border-famz-accent', 'ring-2', 'ring-famz-accent/50');
+                swatch.classList.add('border-white');
+            });
+
+            target.classList.add('border-famz-accent', 'ring-2', 'ring-famz-accent/50');
+            target.classList.remove('border-white');
+
+            selectedProduct.color = target.getAttribute('data-color-name');
+            selectedProduct.colorHex = target.getAttribute('data-color-hex');
+            selectedProduct.colorImg = target.getAttribute('data-color-img');
+            
+            document.getElementById('modal-product-image').src = selectedProduct.colorImg;
+            document.getElementById('selected-color-name').textContent = selectedProduct.color;
+        }
+
+        function finalAddToCart() {
+            cartItems.push({...selectedProduct}); 
+
+            updateCartCounter();
+
+            showConfirmationMessage(`${selectedProduct.color} ${selectedProduct.name} added to cart!`);
+
+            closeModal(null, 'color-selection-modal');
+        }
+
+        function closeSelectionModal(event) {
+            closeModal(event, 'color-selection-modal');
+        }
+        
+        // --- CART PREVIEW MODAL LOGIC (Same as before) ---
+
+        function openCartPreview() {
+            const modal = document.getElementById('cart-preview-modal');
+            modal.classList.remove('hidden');
+            modal.querySelector('div:last-child').classList.remove('translate-x-full');
+            
+            document.body.classList.add('overflow-hidden');
+            renderCartItems();
+        }
+
+        function closeCartPreview(event) {
+            if (event && event.target !== document.getElementById('cart-preview-modal')) return;
+
+            const modal = document.getElementById('cart-preview-modal');
+            modal.querySelector('div:last-child').classList.add('translate-x-full');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, 300);
+        }
+
+        function removeCartItem(index) {
+            cartItems.splice(index, 1);
+            updateCartCounter();
+            renderCartItems(); 
+        }
+
+        function renderCartItems() {
+            const container = document.getElementById('cart-items-container');
+            const subtotalElement = document.getElementById('cart-subtotal');
+            const emptyMessage = document.getElementById('empty-cart-message');
+            const cartSummary = document.getElementById('cart-summary');
+            let subtotal = 0;
+
+            container.innerHTML = '';
+
+            if (cartItems.length === 0) {
+                emptyMessage.classList.remove('hidden');
+                cartSummary.classList.add('hidden');
+                subtotalElement.textContent = 'RM 0.00';
+                return;
+            }
+
+            emptyMessage.classList.add('hidden');
+            cartSummary.classList.remove('hidden');
+
+            cartItems.forEach((item, index) => {
+                const priceValue = parsePrice(item.price);
+                subtotal += priceValue;
+
+                const itemHtml = `
+                    <div class="flex items-center space-x-4 p-3 bg-famz-light rounded-lg border border-gray-100">
+                        <!-- Color Swatch / Mini Image -->
+                        <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-center bg-cover border" style="background-color: ${item.colorHex}; background-image: url('${item.colorImg}'); background-size: cover; border-color: ${item.colorHex};">
+                        </div>
+                        
+                        <!-- Item Details -->
+                        <div class="flex-grow">
+                            <p class="font-semibold text-famz-dark">${item.name}</p>
+                            <p class="text-sm text-gray-600">Color: ${item.color} (${item.materialKey})</p>
+                            <p class="font-bold text-famz-accent">${item.price}</p>
+                        </div>
+
+                        <!-- Remove Button -->
+                        <button onclick="removeCartItem(${index})" class="text-gray-400 hover:text-famz-accent transition duration-150 p-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+                `;
+                container.innerHTML += itemHtml;
+            });
+
+            subtotalElement.textContent = formatPrice(subtotal);
+        }
+
+
+        // --- NEW CHECKOUT FLOW LOGIC ---
+
+        function openCheckoutModal() {
+            if (cartItems.length === 0) {
+                showConfirmationMessage("Your cart is empty! Please add items first.");
+                return;
+            }
+
+            closeCartPreview();
+            
+            const modal = document.getElementById('checkout-modal');
+            const summaryElement = document.getElementById('checkout-order-summary');
+            const subtotalElement = document.getElementById('checkout-final-subtotal');
+            
+            let summaryHTML = '';
+            let total = 0;
+
+            // Build summary details
+            cartItems.forEach(item => {
+                const priceValue = parsePrice(item.price);
+                total += priceValue;
+                summaryHTML += `<p>- ${item.name} (${item.color}) - ${item.price}</p>`;
+            });
+
+            summaryElement.innerHTML = summaryHTML;
+            subtotalElement.textContent = formatPrice(total);
+
+            // Store items and total temporarily
+            currentOrder.items = cartItems.map(item => ({...item}));
+            currentOrder.total = total;
+
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        // STEP 1: Initiate Payment and Display QR Code
+        function initiateTNGPayment() {
+            const nameInput = document.getElementById('customer-name');
+            const phoneInput = document.getElementById('customer-phone');
+            
+            // Validation
+            if (!nameInput.value.trim() || !phoneInput.value.trim()) {
+                showConfirmationMessage("Please enter your Full Name and Phone Number to proceed.");
+                return;
+            }
+            
+            // Store customer info in temporary state
+            currentOrder.name = nameInput.value.trim();
+            currentOrder.phone = phoneInput.value.replace(/[^0-9]/g, '');
+
+            // Close the Checkout Modal
+            closeModal(null, 'checkout-modal'); 
+
+            // Update QR Modal content
+            document.getElementById('tng-amount-display').textContent = formatPrice(currentOrder.total);
+
+            // Open the QR Modal (STEP 2)
+            document.getElementById('tng-qr-modal').classList.remove('hidden');
+        }
+
+        // STEP 2: Open Shipping Form (after customer has presumably scanned QR)
+        function openShippingModal() {
+            // Close QR Modal directly to prevent the recursive logic in closeModal from running.
+            document.getElementById('tng-qr-modal').classList.add('hidden'); 
+
+            // Open Shipping Modal
+            document.getElementById('shipping-info-modal').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        // STEP 3: Finalize Order
+        function finalizeOrder() {
+            const form = document.getElementById('shipping-form');
+            const address1 = document.getElementById('address-line1');
+            const postcode = document.getElementById('postcode');
+            const city = document.getElementById('city');
+            const state = document.getElementById('state');
+            
+            // Simple validation for required fields in the shipping form
+            if (!address1.value || !postcode.value || !city.value || !state.value) {
+                showConfirmationMessage("Please fill in all required shipping details.");
+                return;
+            }
+
+            // Collect Shipping Info
+            currentOrder.address = {
+                line1: address1.value.trim(),
+                line2: document.getElementById('address-line2').value.trim(),
+                postcode: postcode.value.trim(),
+                city: city.value.trim(),
+                state: state.value.trim()
+            };
+
+            // --- FINAL ORDER SUBMISSION LOGIC ---
+            
+            console.log("--- FINAL ORDER SUBMITTED ---");
+            console.log("Customer Details:", { name: currentOrder.name, phone: currentOrder.phone });
+            console.log("Order Total:", formatPrice(currentOrder.total));
+            console.log("Shipping Address:", currentOrder.address);
+            console.log("Items:", currentOrder.items);
+            
+            // In a real application, you would now send `currentOrder` to your server.
+            
+            // Clear all state after successful submission
+            cartItems = [];
+            currentOrder = { name: '', phone: '', total: 0, items: [], address: {} };
+            updateCartCounter();
+            closeModal(null, 'shipping-info-modal');
+            
+            showConfirmationMessage("Order Placed Successfully! Thank you for shopping with FAMZ Collection. Your shipping details have been recorded.");
+            
+            // Reset form fields
+            document.getElementById('checkout-form').reset();
+            form.reset();
+        }
+
+        // --- Mobile Menu Toggle (Same as before) ---
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Initialize cart counter on load
+        updateCartCounter();
+    </script>
+</body>
+</html>
